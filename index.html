@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sally Student Resume 2.0</title>
+</head>
+<body>
+    <div id="application-root"></div>
+
+    <script
+      src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+    <script
+    src="https://unpkg.com/babel-standalone@6/babel.min.js">
+    </script>
+    <script type="text/babel">
+      // Our code will go here
+      function App(props) {
+        return (
+          <header>
+            {props.children}
+          </header>
+        );
+      }
+
+ReactDOM.render(
+  <App className='resume'>
+    <header>
+      <h1>Sally Student's Resume</h1>
+    </header>
+   
+    <main>
+      <h2> Contact Information</h2>
+      <address>
+        <img src="https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg" alt="A picture of Sally Student" />
+        <ul>
+          <li>Name: Sally Student</li>
+          <li>Email: <a href="mailto:student.sally@gmail.com?subject=Interest in Resume">student.sally@gmail.com</a></li>
+          <li>Phone Number: (847) 867-5309</li>
+       </ul>
+      </address>
+
+      <section>
+        <h2>Education</h2>
+          <ul>
+            <li><a href="https://www.thinkful.com/bootcamp/web-development/flexible/?utm_campaign=search_den_brand_q4.18&utm_medium=cpc&utm_content=thinkful_exact_c_fewd-201_no-query&utm_term=thinkful_e_kwd-303219710301&utm_source=google&gclid=Cj0KCQiA3b3gBRDAARIsAL6D-N-07a8FXXTFtkFE2B4wNsedEU_hDsVCgD6ph-lWYl1pSV96mR0UT10aAgO1EALw_wcB">Thinkful</a></li>
+            <li><a href="https://www.colorado.edu/about?gclid=Cj0KCQiA3b3gBRDAARIsAL6D-N_dp_UdyF7N-zBpdJtbcOfECYscnXBDzahdKbuVZtvnFzjQdfHCk5waAtZiEALw_wcB"> University of Colorado Boulder</a></li>
+          </ul>
+      </section>
+
+      <section>
+       <h2>Employment History</h2>
+        <ol>
+          <li><b>Des Moines Public Schools</b></li>
+          <li><b>Postion:</b> 9th Grade English Teacher</li>
+          <li><b>Dates Employed:</b> Aug 2016-May2018</li>
+          <li><b>Job Description:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at elementum est, nec viverra ligula. Duis id malesuada justo, at lacinia dui. Maecenas tristique nulla vel nulla tempus, eget consequat turpis iaculis. Fusce rutrum purus in feugiat pellentesque. Cras dictum ex purus, a congue felis fermentum sed. Duis placerat porttitor tellus et sagittis.</li>
+        </ol>
+
+        <ol> 
+            <li><b>Arbys</b></li>
+            <li><b>Postion:</b> Cashier</li>
+            <li><b>Dates Employed:</b> Aug 2000-May2010</li>
+            <li><b>Job Description:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at elementum est, nec viverra ligula. Duis id malesuada justo, at lacinia dui. Maecenas tristique nulla vel nulla tempus, eget consequat turpis iaculis. Fusce rutrum purus in feugiat pellentesque. Cras dictum ex purus, a congue felis fermentum sed. Duis placerat porttitor tellus et sagittis.</li>
+        </ol>
+      </section>
+    </main>
+  </App>,
+  document.querySelector('#application-root')
+);     
+    </script>
+</body>
+</html>
